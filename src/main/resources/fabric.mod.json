@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "makingminecraftbetter",
+	"version": "${version}",
+	"name": "Making Minecraft Better",
+	"description": "This mod makes minecraft 'BETTER' ",
+	"authors": [
+		"Currently_Dying"
+	],
+	"contact": {
+		"homepage": "N/A",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GNU General Public License v3.0",
+	"icon": "assets/makingminecraftbetter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.currentlydying.makingminecraftbetter.MakingMinecraftBetter"
+		],
+		"fabric-datagen": [
+			"net.currentlydying.makingminecraftbetter.MakingMinecraftBetterDataGenerator"
+		],
+		"client": [
+			"net.currentlydying.makingminecraftbetter.MakingMinecraftBetterClient"
+		]
+	},
+	"mixins": [
+		"makingminecraftbetter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
